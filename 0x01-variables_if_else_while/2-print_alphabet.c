@@ -1,25 +1,45 @@
 #include <stdio.h>
 
+
+
 /**
- * main - Entry point
  *
- * Description: print all aplhabet letters
+ *  * main - Entry point
  *
- * Return: Always 0 (Success)
- */
+ *   *
+ *
+ *    * Description: print all aplhabet letters
+ *
+ *     *
+ *
+ *      * Return: Always 0 (Success)
+ *
+ *      */
+
+
 
 int main(void)
 
 {
-char leta;
 
-for (leta = 'a';leta <= 'z'; leta++)
-{
+		char leta = 'a';
 
-putchar(leta);
 
-}
-putchar('\n');
 
-return (0);
+			while (leta <= 'z')
+
+					{
+
+								putchar(leta);
+
+										++leta;
+
+											}
+
+				putchar('\n');
+
+
+
+					return (0);
+
 }
