@@ -5,13 +5,10 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: print value of n satus; greater than, is zero and is not less than 6.
- *
- *Return: Always 0 (Success)
- */
-
+* main - Entry point
+*
+* Return: Always 0 (Success/correct)
+*/
 
 
 int main(void)
