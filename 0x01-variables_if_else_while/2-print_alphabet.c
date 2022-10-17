@@ -3,18 +3,12 @@
 
 
 /**
+ * main - Entry point
  *
- *  * main - Entry point
+ * Description: print all aplhabet letters
  *
- *   *
- *
- *    * Description: print all aplhabet letters
- *
- *     *
- *
- *      * Return: Always 0 (Success)
- *
- *      */
+ * Return: Always 0 (Success)
+ */
 
 
 
@@ -22,24 +16,17 @@ int main(void)
 
 {
 
-		char leta = 'a';
+char leta = 'a';
 
+while (leta <= 'z')
+{
+putchar(leta);
 
+++leta;
 
-			while (leta <= 'z')
+}
+putchar('\n');
 
-					{
-
-								putchar(leta);
-
-										++leta;
-
-											}
-
-				putchar('\n');
-
-
-
-					return (0);
+return (0);
 
 }
