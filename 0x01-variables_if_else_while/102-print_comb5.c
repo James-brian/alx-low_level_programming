@@ -9,7 +9,9 @@
 int main(void)
 {
 int num_x;
-int num_y;
+
+int num_y;	
+
 for (num_x = 0;num_x < 100 ; num_x++)
 {
 for (num_y = num_x + 1 ; num_y < 100; num_y++)
