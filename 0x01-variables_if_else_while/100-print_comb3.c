@@ -11,24 +11,27 @@
  */
 
 int main(void)
-
 {
-int a, x;
-for (a = '0'; a <= '9'; a++)
+int x;
+int y = 0;
+while (y < 10)
 {
-for (x = '0'; x <= '9'; x++)
+x = 0;
+while (x < 10)
 {
-if (a < x)
+if (y != x && y < x)
 {
-putchar(a);
-putchar(x);
-if (a != '8' || (a == '8' && x != '9'))
+putchar('0' + y);
+putchar('0' + x);
+if (x + y != 17)
 {
-																				putchar(',');
 putchar(',');
+putchar(' ');
 }
 }
+x++;
 }
+y++;
 }
 putchar('\n');
 return (0);
