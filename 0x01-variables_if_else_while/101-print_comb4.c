@@ -1,30 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints all combinations of three digits
  *
- * Return: Always 0 (success/correct)
+ * Return: returns 0
  */
 
 int main(void)
 {
-int num1;
-int num2;
-for (num2 = 0; num1 < 100 ; num1++)
+int x, y, z;
+for (x = 0; x < 9; x++)
 {
-for (num2 = num1 + 1 ; num2 < 100; num2++)
+for (y = x + 1; y < 9; y++)
 {
-putchar (num1 / 10 + '0');
-putchar (num1 % 10 + '0');
-putchar (' ');
-putchar (num2 / 10 + '0');
-putchar (num2 % 10 + '0');
-if (num1 == 98 && num2 == 99)
+for (z = y + 1; z < 10; z++)
 {
-break;
+putchar((x % 10) + '0');
+putchar((y % 10) + '0');
+putchar((z % 10) + '0');
+
+if (x == 7 && y == 8 && z == 9)
+{
+continue;
 }
 putchar(',');
-putchar (' ');
+putchar(' ');
+}
 }
 }
 putchar('\n');
