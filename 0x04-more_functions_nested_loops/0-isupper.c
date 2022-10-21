@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _isupper - check for upper case letter
@@ -9,7 +8,7 @@
  * Return: 0 or 1.
  */
 
-int _isupper(int x)
+int _isupper(int c)
 {
-return (x >= 65 && x <= 90);
+return (c >= 65 && c <= 90);
 }
