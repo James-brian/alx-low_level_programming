@@ -4,15 +4,15 @@
 /**
  * _isdigit - checks for a digit
  *
- * @x : character to check the digit
+ * @c : character to check the digit
  *
  * Return:0 or 1
  */
 
 
 
-int _isdigit(int x)
+int _isdigit(int c)
 {
-if (x <= 9 && x >= 0)
+if (c <= 9 && c >= 0)
 return (1);
 }
