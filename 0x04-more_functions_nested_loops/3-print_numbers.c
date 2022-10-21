@@ -16,10 +16,10 @@ void print_numbers(void)
 
 	{
 
-		putchar(x);
+		_putchar(x);
 
 	}
 
-	putchar('\n');
+	_putchar('\n');
 
 }
