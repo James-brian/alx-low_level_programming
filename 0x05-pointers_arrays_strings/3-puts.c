@@ -14,7 +14,7 @@ void _puts(char *str)
 int i = 0;
 while (str[i])
 {
-printf("%s\n", str[i]);
+printf("%d\n", str[i]);
 i++;
 }
 }
