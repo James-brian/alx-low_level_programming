@@ -1,13 +1,10 @@
 #include <stdio.h>
 
 
-
 /**
- * *print_chessboard - description
+ * print_chessboard - prints the chessboard
  *
- * @a: board
- *
- * Return: void
+ * @a: two dimension array to print
  */
 
 void print_chessboard(char (*a)[8])
