@@ -1,26 +1,7 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion -  natural sqrtf a number
- *
- * @n: int to find sqrt
- *
- * Return: natural sqrt ot -1
- */
-
-
-
-int _sqrt_recursion(int n)
-
-{
-
-	return (square_root(n, 1));
-
-}
-
-
-/**
- * square_root - find sqrt
+ * sqroot - find sqrt
  *
  * @n: int to find sqrt
  *
@@ -31,7 +12,7 @@ int _sqrt_recursion(int n)
 
 
 
-int square_root(int n, int evall)
+int sqroot(int n, int evall)
 
 {
 
@@ -47,7 +28,7 @@ int square_root(int n, int evall)
 
 	{
 
-		return (square_root(n, evall + 1));
+		return (sqroot(n, evall + 1));
 
 	}
 
@@ -60,3 +41,25 @@ int square_root(int n, int evall)
 	}
 
 }
+
+
+
+/**
+ * _sqrt_recursion -  natural sqrtf a number
+ *
+ * @n: int to find sqrt
+ *
+ * Return: natural sqrt ot -1
+ */
+
+int _sqrt_recursion(int n)
+
+{
+
+	return (sqroot(n, 1));
+
+}
+
+
+
+
